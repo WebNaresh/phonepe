@@ -1,5 +1,5 @@
 {
-  "name": "phonepe",
+  "name": "phonepe-payment-integration",
   "version": "1.0.0",
   "description": "This is Phone pe SDK for web to integrate phone pay ",
   "main": "index.js",
@@ -11,7 +11,10 @@
     "url": "git+https://github.com/WebNaresh/phonepe.git"
   },
   "keywords": [
-    "phonepe"
+    "phonepe",
+    "phonepe payment",
+    "phonepe payment gateway",
+    "phonepe payment integration"
   ],
   "author": "WebNaresh",
   "license": "ISC",
