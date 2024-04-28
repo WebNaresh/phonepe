@@ -1,0 +1,22 @@
+{
+  "name": "phonepe",
+  "version": "1.0.0",
+  "description": "This is Phone pe SDK for web to integrate phone pay ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebNaresh/phonepe.git"
+  },
+  "keywords": [
+    "phonepe"
+  ],
+  "author": "WebNaresh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebNaresh/phonepe/issues"
+  },
+  "homepage": "https://github.com/WebNaresh/phonepe#readme"
+}
