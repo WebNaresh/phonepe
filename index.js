@@ -190,13 +190,13 @@ let phonePayInstance = null;
  * Initialize the PhonePay instance.
  * - for development you can initialize  initPhonePay() without any arguments
  * - for production you need to pass the arguments or it will still work with default values
- * @param {string} saltKey - The API key provided by PhonePe.
- * @param {string} merchantId - The merchant ID provided by PhonePe.
- * @param {number} keyIndex - The key index provided by PhonePe.
- * @param {"PROD"|"DEV"} environment - The environment to use, either "PROD" or "DEV".
- * @returns {PhonePay} The PhonePay instance.
- */
-function initPhonePay(saltKey, merchantId, keyIndex, environment) {
+ * @param {Object} options - The options for initializing PhonePay.
+ * @param {string} options.saltKey - The API key provided by PhonePe.
+ * @param {string} options.merchantId - The merchant ID provided by PhonePe.
+ * @param {number} options.keyIndex - The key index provided by PhonePe.
+ * @param {"PROD"|"DEV"} options.environment - The environment to use, either "PROD" or "DEV".
+ * @returns {PhonePay} The PhonePay instance */
+function initPhonePay({ saltKey, merchantId, keyIndex, environment }) {
   if (!phonePayInstance) {
     phonePayInstance = new PhonePay(saltKey, merchantId, keyIndex, environment);
   }
