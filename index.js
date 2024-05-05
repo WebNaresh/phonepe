@@ -196,7 +196,12 @@ let phonePayInstance = null;
  * @param {number} options.keyIndex - The key index provided by PhonePe.
  * @param {"PROD"|"DEV"} options.environment - The environment to use, either "PROD" or "DEV".
  * @returns {PhonePay} The PhonePay instance */
-function initPhonePay({ saltKey, merchantId, keyIndex, environment }) {
+function initPhonePay(options) {
+  if (!options) {
+    phonePayInstance = new PhonePay();
+    console.log("\x1b[90m", "From Phone Pay Using DEV environment");
+    return phonePayInstance;
+  }
   if (!phonePayInstance) {
     phonePayInstance = new PhonePay(saltKey, merchantId, keyIndex, environment);
   }
