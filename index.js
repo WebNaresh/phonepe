@@ -203,7 +203,12 @@ function initPhonePay(options) {
     return phonePayInstance;
   }
   if (!phonePayInstance) {
-    phonePayInstance = new PhonePay(saltKey, merchantId, keyIndex, environment);
+    phonePayInstance = new PhonePay(
+      options?.saltKey,
+      options?.merchantId,
+      options?.keyIndex,
+      options?.environment
+    );
   }
   return phonePayInstance;
 }

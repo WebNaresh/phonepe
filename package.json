@@ -1,6 +1,6 @@
 {
   "name": "phonepe-payment-integration",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This is Phone pe SDK for web to integrate phone pay ",
   "main": "index.js",
   "scripts": {
